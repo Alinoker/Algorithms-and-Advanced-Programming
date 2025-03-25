@@ -2,6 +2,12 @@
  * Time should be spend understanding this code.
  * Change the contents of the array and see what happens
  * Include additional print statements to assist understanding of each step of the algorithm.
+ * 
+ * Instructions 
+
+Develop the MergeSortLabApp class, this class sorts an array of Strings. 
+
+The following list of Strings can be used: "January", "February", "March", "April", "May", "June", "July", "August", “September”, “October”, “November”, “December” 
  */
 
 import java.util.Arrays;
@@ -69,22 +75,24 @@ public class MergeSortApp{
         System.out.println("numbers " + Arrays.toString(numbers));
     }
 
+    /* Writing exercise from here */
     public static void main(String[] args) {
 
-        int arr[] = {13, 4, 24, 10, 3, 33, 28, 52, 6};
+        String months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
-        System.out.println("Before:");
-        printArray(arr);
+        System.out.println("Before sorting:");
+        printArray(months);
 
-        divide(arr); 
+        /* deleting this
+        divide(months); */
 
-        System.out.println("After:");
-        printArray(arr);
+        System.out.println("After sorting:");
+        printArray(months);
     }
-    private static void printArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++)
-            System.out.print(arr[i] + " ");
- 
-        System.out.println();
+    
+    private static void printArray(String[] arr) {
+        /* for (int i = 0; i < arr.length; i++)
+            System.out.print(arr[i] + " "); */
+        System.out.println(Arrays.toString(arr));
     }
 }
